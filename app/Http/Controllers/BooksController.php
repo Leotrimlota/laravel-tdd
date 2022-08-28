@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class BooksController extends Controller
 {
-    //
 
     public function store()
     {
@@ -35,7 +34,7 @@ class BooksController extends Controller
     {
         return \request()->validate([
             'title' => 'required',
-            'author' => 'required'
+            'author_id' => 'required'
         ]);
     }
 }
